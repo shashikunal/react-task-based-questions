@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.budget-tracker {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.title {
+  background: linear-gradient(45deg, #4caf50, #81c784);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.input-section button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.input-section button:hover {
+  transform: scale(1.05);
+}
+
+.analytics-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pie-chart {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--income-color) 0% var(--percentage),
+    var(--expense-color) var(--percentage) 100%
+  );
+  animation: drawPie 1s ease-out forwards;
+}
+
+@keyframes drawPie {
+  0% {
+    background: conic-gradient(#ccc 0% 100%, #ccc 100% 100%);
+  }
+}
+
+.chart-legend {
+  margin-top: 10px;
+}
+
+.legend-income,
+.legend-expense {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.legend-income {
+  background-color: #4caf50;
+}
+
+.legend-expense {
+  background-color: #f44336;
+}
+
+.transactions-list {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.transactions-list h3 {
+  margin-bottom: 10px;
+}
+
+.transactions-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transactions-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+.transactions-list li.income {
+  border-left: 4px solid #4caf50;
+}
+
+.transactions-list li.expense {
+  border-left: 4px solid #f44336;
+}
+
+.transactions-list li:hover {
+  background: #f1f1f1;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-section label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.filter-section select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}

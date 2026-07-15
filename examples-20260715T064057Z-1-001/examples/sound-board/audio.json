@@ -1,0 +1,23 @@
+[
+  {
+    "name": "applause",
+    "path": "./src/sound-board/audio/applause.mp3"
+  },
+  { "name": "boo", "path": "./src/sound-board/audio/boo.mp3" },
+  {
+    "name": "gasp",
+    "path": "./src/sound-board/audio/gasp.mp3"
+  },
+  {
+    "name": "tada",
+    "path": "./src/sound-board/audio/tada.mp3"
+  },
+  {
+    "name": "victory",
+    "path": "./src/sound-board/audio/victory.mp3"
+  },
+  {
+    "name": "wrong",
+    "path": "./src/sound-board/audio/wrong.mp3"
+  }
+]

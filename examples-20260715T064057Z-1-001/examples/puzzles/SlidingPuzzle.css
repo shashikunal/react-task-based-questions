@@ -1,0 +1,62 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.puzzle-container {
+  margin: 0 auto;
+  width: 400px;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+  border: 2px solid #333;
+  background-color: #222;
+}
+
+.tile {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: 300%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tile.empty {
+  background: #000;
+  cursor: default;
+}
+
+.tile:hover:not(.empty) {
+  transform: scale(1.05);
+}
+
+.celebration {
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.celebration h2 {
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.celebration button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.celebration button:hover {
+  background-color: #0056b3;
+}

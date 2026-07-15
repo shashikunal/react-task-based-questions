@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas {
+  border: 2px solid #4682b4; /* Adjusted to a softer steelblue shade */
+  margin: 50px auto;
+  background-color: #f0f8ff; /* Light blue for a subtle background contrast */
+}
+
+.toolbox {
+  background-color: #6a5acd; /* Deepened to enhance slateblue */
+  border: 1px solid #483d8b; /* Darker slateblue for a subtle border contrast */
+  display: flex;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 8px; /* Added rounded corners for a modern look */
+}
+
+.toolbox > * {
+  background-color: #f8f9fa; /* Neutral light background for better readability */
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  margin: 0.25rem;
+  cursor: pointer;
+  border-radius: 50%; /* Circle buttons for a playful aesthetic */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+.toolbox > *:hover {
+  background-color: #87cefa; /* Sky blue for hover */
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+.toolbox > *:last-child {
+  margin-left: auto;
+  background-color: #ff6961; /* Soft red for the "Clear" button */
+}
+
+.toolbox > *:last-child:hover {
+  background-color: #ff4500; /* Bright red on hover for emphasis */
+}

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #efefef, papayawhip);
+}
+
+div p {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: bolder;
+}
+
+div p:first-child {
+  font-size: 100px;
+}

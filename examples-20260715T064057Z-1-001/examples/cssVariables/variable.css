@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.varContainer {
+  width: 100vw;
+  background: #1a1a1d;
+  padding: 20px;
+  height: 100vh;
+}
+
+.varContainer h2 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+}
+
+.controls section {
+  width: 30%;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+.container {
+  background-image: url("https://wallpapercave.com/wp/wp1895396.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;  
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.controls {
+  position: absolute;
+  bottom: 110px;
+  background: #f6f8f6;
+border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 18px;
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
